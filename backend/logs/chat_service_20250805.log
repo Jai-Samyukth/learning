@@ -54,3 +54,49 @@ NoneType: None
 2025-08-05 15:49:20 | INFO | chat_service | info:66 | Sending request to Gemini AI
 2025-08-05 15:49:30 | INFO | chat_service | info:66 | Gemini AI response received
 2025-08-05 15:49:30 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 4046}, "timestamp": "2025-08-05T10:19:30.243040", "logger": "chat_service"}
+2025-08-05 16:05:34 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_b3ac87609b21", "topic": "", "count": 50, "mode": "practice"}, "timestamp": "2025-08-05T10:35:34.885511", "logger": "chat_service"}
+2025-08-05 16:05:34 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf", "content_length": 319387}, "timestamp": "2025-08-05T10:35:34.886510", "logger": "chat_service"}
+2025-08-05 16:05:34 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-05 16:05:43 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-05 16:05:43 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 3883}, "timestamp": "2025-08-05T10:35:43.669565", "logger": "chat_service"}
+2025-08-05 16:05:43 | ERROR | chat_service | error:74 | {"message": "Error generating questions", "data": {"error": "name 'parsed_json' is not defined"}, "timestamp": "2025-08-05T10:35:43.670566", "logger": "chat_service"}
+Traceback (most recent call last):
+  File "S:\software\learning\backend\services\chat_service.py", line 362, in generate_questions
+    if 'questions' not in parsed_json:
+                          ^^^^^^^^^^^
+NameError: name 'parsed_json' is not defined
+2025-08-05 16:05:43 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_af801ca5db4b", "topic": "", "count": 50, "mode": "practice"}, "timestamp": "2025-08-05T10:35:43.681278", "logger": "chat_service"}
+2025-08-05 16:05:43 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf", "content_length": 319387}, "timestamp": "2025-08-05T10:35:43.682278", "logger": "chat_service"}
+2025-08-05 16:05:43 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-05 16:05:53 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-05 16:05:53 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 4140}, "timestamp": "2025-08-05T10:35:53.248631", "logger": "chat_service"}
+2025-08-05 16:05:53 | ERROR | chat_service | error:74 | {"message": "Error generating questions", "data": {"error": "name 'parsed_json' is not defined"}, "timestamp": "2025-08-05T10:35:53.248631", "logger": "chat_service"}
+Traceback (most recent call last):
+  File "S:\software\learning\backend\services\chat_service.py", line 362, in generate_questions
+    if 'questions' not in parsed_json:
+                          ^^^^^^^^^^^
+NameError: name 'parsed_json' is not defined
+2025-08-05 16:05:53 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_b3ac87609b21", "topic": null, "count": 25, "mode": "practice"}, "timestamp": "2025-08-05T10:35:53.253372", "logger": "chat_service"}
+2025-08-05 16:05:53 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf", "content_length": 319387}, "timestamp": "2025-08-05T10:35:53.253372", "logger": "chat_service"}
+2025-08-05 16:05:53 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-05 16:06:03 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-05 16:06:03 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 3144}, "timestamp": "2025-08-05T10:36:03.070185", "logger": "chat_service"}
+2025-08-05 16:06:03 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_af801ca5db4b", "topic": null, "count": 25, "mode": "practice"}, "timestamp": "2025-08-05T10:36:03.076635", "logger": "chat_service"}
+2025-08-05 16:06:03 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf", "content_length": 319387}, "timestamp": "2025-08-05T10:36:03.077148", "logger": "chat_service"}
+2025-08-05 16:06:03 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-05 16:06:11 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-05 16:06:11 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 2740}, "timestamp": "2025-08-05T10:36:11.384646", "logger": "chat_service"}
+2025-08-05 16:06:11 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_b3ac87609b21", "topic": "", "count": 50, "mode": "practice"}, "timestamp": "2025-08-05T10:36:11.385648", "logger": "chat_service"}
+2025-08-05 16:06:11 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf", "content_length": 319387}, "timestamp": "2025-08-05T10:36:11.386648", "logger": "chat_service"}
+2025-08-05 16:06:11 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-05 16:06:20 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-05 16:06:20 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 4188}, "timestamp": "2025-08-05T10:36:20.602128", "logger": "chat_service"}
+2025-08-05 16:06:20 | ERROR | chat_service | error:74 | {"message": "Error generating questions", "data": {"error": "name 'parsed_json' is not defined"}, "timestamp": "2025-08-05T10:36:20.603130", "logger": "chat_service"}
+Traceback (most recent call last):
+  File "S:\software\learning\backend\services\chat_service.py", line 362, in generate_questions
+    except json.JSONDecodeError:
+                          ^^^^^^^
+NameError: name 'parsed_json' is not defined
+2025-08-05 16:06:25 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_b3ac87609b21", "topic": null, "count": 25, "mode": "practice"}, "timestamp": "2025-08-05T10:36:25.517197", "logger": "chat_service"}
+2025-08-05 16:06:25 | ERROR | chat_service | error:74 | {"message": "No PDF context found", "data": {"token": "user_b3ac87609b21"}, "timestamp": "2025-08-05T10:36:25.517197", "logger": "chat_service"}
+NoneType: None

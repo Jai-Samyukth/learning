@@ -145,7 +145,9 @@ export default function UploadPage() {
                 <BookOpen className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h1 className="text-3xl font-bold text-olive-green">LuminalQ</h1>
+                <h1 className="text-3xl font-bold text-olive-green">
+                  RevolvoAI <span className="bg-orange-500 text-white px-2 py-1 rounded-md text-lg ml-2">Beta</span>
+                </h1>
                 <p className="text-sm font-medium text-muted-sage">made with Genrec-AI</p>
               </div>
             </div>

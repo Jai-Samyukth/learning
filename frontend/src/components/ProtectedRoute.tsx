@@ -26,7 +26,9 @@ export default function ProtectedRoute({ children }: ProtectedRouteProps) {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
             <BookOpen className="h-8 w-8 text-white" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">LuminalQ</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">
+            RevolvoAI <span className="bg-orange-500 text-white px-2 py-1 rounded-md text-sm ml-2">Beta</span>
+          </h1>
           <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto"></div>
           <p className="text-gray-600 mt-2">Loading your session...</p>
         </div>

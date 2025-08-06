@@ -48,13 +48,9 @@ class StructuredLogger:
     def _format_message(self, message: str, **kwargs) -> str:
         """Format message with optional structured data"""
         if kwargs:
-            structured_data = {
-                "message": message,
-                "data": kwargs,
-                "timestamp": datetime.utcnow().isoformat(),
-                "logger": self.name
-            }
-            return json.dumps(structured_data)
+            # Simple key=value format instead of JSON
+            data_str = ", ".join([f"{k}={v}" for k, v in kwargs.items()])
+            return f"{message} | {data_str}"
         return message
     
     def debug(self, message: str, **kwargs):

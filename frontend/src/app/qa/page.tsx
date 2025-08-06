@@ -31,6 +31,7 @@ import {
   Zap,
   Copy
 } from 'lucide-react';
+import LoadingBox from '@/components/LoadingBox';
 
 interface Question {
   id: string;
@@ -270,7 +271,7 @@ REQUIREMENTS:
 5. Structure the answer clearly with proper formatting
 6. If the question asks for examples, provide the actual examples from the document
 7. If the question asks for definitions, use the exact definitions from the text
-
+8. 
 Please provide a thorough, well-structured answer that helps the user learn from the document content.`);
 
       console.log('Answer received for question:', question.question);
@@ -383,7 +384,9 @@ Please provide a thorough, well-structured answer that helps the user learn from
                 <BookOpen className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold" style={{ color: '#6B705C' }}>LuminalQ</h1>
+                <h1 className="text-xl font-bold" style={{ color: '#6B705C' }}>
+                  RevolvoAI <span className="bg-orange-500 text-white px-2 py-1 rounded-md text-sm ml-2">Beta</span>
+                </h1>
                 <p className="text-xs font-medium" style={{ color: '#A5A58D' }}>AI Learning Assistant</p>
               </div>
             </div>
@@ -1043,6 +1046,12 @@ Please provide a thorough, well-structured answer that helps the user learn from
           </div>
         )}
       </div>
+      
+      {/* Loading Box for Question Generation */}
+      <LoadingBox 
+        message="Please wait, this may take a while"
+        isVisible={generatingQuestions}
+      />
     </div>
   );
 }

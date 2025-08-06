@@ -1,0 +1,43 @@
+2025-08-06 10:20:43 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_f38b7986af6d", "topic": "", "count": 25, "mode": "practice"}, "timestamp": "2025-08-06T04:50:43.884108", "logger": "chat_service"}
+2025-08-06 10:20:43 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "Basic_Language_of_Ma_by_Juan_Jorge_www_pdfbook_co_ke_.pdf", "content_length": 634740}, "timestamp": "2025-08-06T04:50:43.884108", "logger": "chat_service"}
+2025-08-06 10:20:43 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-06 10:20:55 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-06 10:20:55 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 1892}, "timestamp": "2025-08-06T04:50:55.141267", "logger": "chat_service"}
+2025-08-06 10:21:56 | INFO | chat_service | info:66 | {"message": "Generating questions", "data": {"token": "user_f38b7986af6d", "topic": "", "count": 10, "mode": "quiz"}, "timestamp": "2025-08-06T04:51:56.649119", "logger": "chat_service"}
+2025-08-06 10:21:56 | INFO | chat_service | info:66 | {"message": "Processing PDF for questions", "data": {"filename": "Basic_Language_of_Ma_by_Juan_Jorge_www_pdfbook_co_ke_.pdf", "content_length": 634740}, "timestamp": "2025-08-06T04:51:56.650117", "logger": "chat_service"}
+2025-08-06 10:21:56 | INFO | chat_service | info:66 | Sending request to Gemini AI
+2025-08-06 10:22:08 | INFO | chat_service | info:66 | Gemini AI response received
+2025-08-06 10:22:08 | INFO | chat_service | info:66 | {"message": "Gemini AI response received", "data": {"response_length": 3482}, "timestamp": "2025-08-06T04:52:08.131009", "logger": "chat_service"}
+2025-08-06 10:22:15 | INFO | chat_service | info:62 | Generating questions | token=user_f38b7986af6d, topic=, count=10, mode=quiz
+2025-08-06 10:22:15 | ERROR | chat_service | error:70 | No PDF context found | token=user_f38b7986af6d
+NoneType: None
+2025-08-06 10:23:09 | INFO | chat_service | info:62 | Generating questions | token=user_af801ca5db4b, topic=, count=25, mode=practice
+2025-08-06 10:23:09 | INFO | chat_service | info:62 | Processing PDF for questions | filename='How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf, content_length=319387
+2025-08-06 10:23:09 | INFO | chat_service | info:62 | Sending request to Gemini AI
+2025-08-06 10:23:37 | INFO | chat_service | info:62 | Gemini AI response received
+2025-08-06 10:23:37 | INFO | chat_service | info:62 | Gemini AI response received | response_length=2778
+2025-08-06 10:24:25 | INFO | chat_service | info:62 | Generating questions | token=user_f38b7986af6d, topic=, count=10, mode=quiz
+2025-08-06 10:24:25 | INFO | chat_service | info:62 | Processing PDF for questions | filename=Bare Knuckled Project Management How to Succeed at Every Project.pdf.pdf, content_length=240762
+2025-08-06 10:24:25 | INFO | chat_service | info:62 | Sending request to Gemini AI
+2025-08-06 10:24:33 | INFO | chat_service | info:62 | Gemini AI response received
+2025-08-06 10:24:33 | INFO | chat_service | info:62 | Gemini AI response received | response_length=3657
+2025-08-06 10:37:51 | INFO | chat_service | info:62 | Generating questions | token=user_af801ca5db4b, topic=, count=50, mode=practice
+2025-08-06 10:37:51 | INFO | chat_service | info:62 | Processing PDF for questions | filename=Back(stabbed) In Brooklyn.pdf.pdf, content_length=302480
+2025-08-06 10:37:51 | INFO | chat_service | info:62 | Sending request to Gemini AI
+2025-08-06 10:38:03 | INFO | chat_service | info:62 | Gemini AI response received
+2025-08-06 10:38:03 | INFO | chat_service | info:62 | Gemini AI response received | response_length=3025
+2025-08-06 10:40:35 | INFO | chat_service | info:62 | Generating questions | token=user_af801ca5db4b, topic=, count=10, mode=quiz
+2025-08-06 10:40:35 | INFO | chat_service | info:62 | Processing PDF for questions | filename=Back(stabbed) In Brooklyn.pdf.pdf, content_length=302480
+2025-08-06 10:40:35 | INFO | chat_service | info:62 | Sending request to Gemini AI
+2025-08-06 10:40:46 | INFO | chat_service | info:62 | Gemini AI response received
+2025-08-06 10:40:46 | INFO | chat_service | info:62 | Gemini AI response received | response_length=2564
+2025-08-06 10:47:54 | INFO | chat_service | info:62 | Generating questions | token=user_af801ca5db4b, topic=, count=25, mode=practice
+2025-08-06 10:47:54 | INFO | chat_service | info:62 | Processing PDF for questions | filename=Back(stabbed) In Brooklyn.pdf.pdf, content_length=302480
+2025-08-06 10:47:54 | INFO | chat_service | info:62 | Sending request to Gemini AI
+2025-08-06 10:48:04 | INFO | chat_service | info:62 | Gemini AI response received
+2025-08-06 10:48:04 | INFO | chat_service | info:62 | Gemini AI response received | response_length=1935
+2025-08-06 10:54:11 | INFO | chat_service | info:62 | Generating questions | token=user_af801ca5db4b, topic=, count=10, mode=quiz
+2025-08-06 10:54:11 | INFO | chat_service | info:62 | Processing PDF for questions | filename=Back(stabbed) In Brooklyn.pdf.pdf, content_length=302480
+2025-08-06 10:54:11 | INFO | chat_service | info:62 | Sending request to Gemini AI
+2025-08-06 10:54:21 | INFO | chat_service | info:62 | Gemini AI response received
+2025-08-06 10:54:21 | INFO | chat_service | info:62 | Gemini AI response received | response_length=2016

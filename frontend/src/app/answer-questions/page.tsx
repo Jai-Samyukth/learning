@@ -42,6 +42,7 @@ import {
   Timer,
   BarChart3
 } from 'lucide-react';
+import LoadingBox from '@/components/LoadingBox';
 
 interface Question {
   id: string;
@@ -306,7 +307,9 @@ export default function AnswerQuestionsPage() {
                 <BookOpen className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold" style={{ color: '#6B705C' }}>LuminalQ</h1>
+                <h1 className="text-xl font-bold" style={{ color: '#6B705C' }}>
+                  RevolvoAI <span className="bg-orange-500 text-white px-2 py-1 rounded-md text-sm ml-2">Beta</span>
+                </h1>
                 <p className="text-xs font-medium" style={{ color: '#A5A58D' }}>AI Learning Assistant</p>
               </div>
             </div>
@@ -931,6 +934,12 @@ export default function AnswerQuestionsPage() {
           </div>
         </div>
       </div>
+      
+      {/* Loading Box for Answer Evaluation */}
+      <LoadingBox 
+        message="Please wait, this may take a while"
+        isVisible={evaluatingAnswers || generatingQuestions}
+      />
     </div>
   );
 }
