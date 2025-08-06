@@ -36,8 +36,9 @@ storage_lock = Lock()
 model_cache = {}
 model_cache_lock = Lock()
 
-# Thread pool for CPU-bound operations
-thread_pool = concurrent.futures.ThreadPoolExecutor(max_workers=10)
+# Thread pool for AI operations - increased for better concurrency
+# Each AI request gets its own thread, allowing true parallel processing
+thread_pool = concurrent.futures.ThreadPoolExecutor(max_workers=50)
 
 def get_rotated_model():
     """

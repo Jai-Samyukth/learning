@@ -1,7 +1,8 @@
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Request, BackgroundTasks
 from pydantic import BaseModel
 from typing import Optional
 import hashlib
+import asyncio
 from models.chat import (
     ChatMessage,
     ChatResponse,
@@ -42,9 +43,13 @@ class QuestionGenerationRequest(BaseModel):
 
 @router.post("/", response_model=ChatResponse)
 async def chat(message: ChatMessage, request: Request):
-    """Send a message to the AI assistant about the selected PDF"""
+    """Send a message to the AI assistant about the selected PDF - each request processed in parallel"""
     user_session = get_simple_user_id(request)
-    return await ChatService.chat(message, user_session)
+    
+    # Create an independent async task for this request to ensure parallel processing
+    # This guarantees that multiple users get responses simultaneously
+    task = asyncio.create_task(ChatService.chat(message, user_session))
+    return await task
 
 @router.get("/history")
 async def get_chat_history(request: Request):
@@ -60,21 +65,30 @@ async def clear_chat_history(request: Request):
 
 @router.post("/generate-questions", response_model=ChatResponse)
 async def generate_questions(request: QuestionGenerationRequest, http_request: Request):
-    """Generate Q&A questions from the selected PDF content, optionally focused on a specific topic"""
+    """Generate Q&A questions from the selected PDF content, optionally focused on a specific topic - parallel processing"""
     user_session = get_simple_user_id(http_request)
-    return await ChatService.generate_questions(user_session, request.topic, request.count, request.mode)
+    
+    # Create independent async task for parallel processing
+    task = asyncio.create_task(ChatService.generate_questions(user_session, request.topic, request.count, request.mode))
+    return await task
 
 @router.post("/evaluate-answer", response_model=AnswerEvaluationResponse)
 async def evaluate_answer(request: AnswerEvaluationRequest, http_request: Request):
-    """Evaluate a single user answer using AI"""
+    """Evaluate a single user answer using AI - parallel processing"""
     user_session = get_simple_user_id(http_request)
-    return await ChatService.evaluate_answer(request, user_session)
+    
+    # Create independent async task for parallel processing
+    task = asyncio.create_task(ChatService.evaluate_answer(request, user_session))
+    return await task
 
 @router.post("/evaluate-quiz", response_model=QuizSubmissionResponse)
 async def evaluate_quiz(request: QuizSubmissionRequest, http_request: Request):
-    """Evaluate a complete quiz submission with overall feedback"""
+    """Evaluate a complete quiz submission with overall feedback - parallel processing"""
     user_session = get_simple_user_id(http_request)
-    return await ChatService.evaluate_quiz(request, user_session)
+    
+    # Create independent async task for parallel processing
+    task = asyncio.create_task(ChatService.evaluate_quiz(request, user_session))
+    return await task
 
 @router.get("/api-rotation-status")
 async def get_api_rotation_status():

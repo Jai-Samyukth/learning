@@ -24,3 +24,7 @@
 2025-08-06 10:37:45 | INFO | pdf_service | info:62 | PDF loaded successfully | file_path=S:\software\PDFFiles\Back(stabbed) In Brooklyn.pdf.pdf, pages=178
 2025-08-06 10:37:46 | INFO | pdf_service | info:62 | Text extraction completed | file_path=S:\software\PDFFiles\Back(stabbed) In Brooklyn.pdf.pdf, extracted_length=302480
 2025-08-06 10:37:46 | INFO | pdf_service | info:62 | Successfully cached extracted text | file_path=S:\software\PDFFiles\Back(stabbed) In Brooklyn.pdf.pdf
+2025-08-06 11:17:54 | INFO | pdf_service | info:62 | Starting PDF text extraction | file_path=S:\software\PDFFiles\'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf
+2025-08-06 11:17:54 | INFO | pdf_service | info:62 | Using cached text | file_path=S:\software\PDFFiles\'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf, text_length=319387
+2025-08-06 11:17:55 | INFO | pdf_service | info:62 | Starting PDF text extraction | file_path=S:\software\PDFFiles\'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf
+2025-08-06 11:17:55 | INFO | pdf_service | info:62 | Using cached text | file_path=S:\software\PDFFiles\'How to develop a Super Power Memory' - Mega Brain ( PDFDrive.com ).pdf, text_length=319387
